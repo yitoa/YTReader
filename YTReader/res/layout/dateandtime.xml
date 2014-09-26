@@ -1,0 +1,211 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <!-- 头部开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/timetopblank" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/timetopheight"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/timesettingspaddleft"
+                android:paddingTop="@dimen/timesettingspaddtop"
+                android:src="@drawable/settings" />
+
+            <TextView
+                android:layout_width="@dimen/timesettingstextwidth"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/timesettingstextpaddleft"
+                android:paddingTop="@dimen/timesettingstextpaddtop"
+                android:text="@string/settings"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/timesettingstextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="@dimen/datebackleftblank"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/dateback"
+                android:layout_width="@dimen/datebackwidth"
+                android:layout_height="@dimen/datebackheight"
+                android:paddingTop="@dimen/datebackpaddtop"
+                android:src="@drawable/back1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/datebacktopbottom" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/thick_line_h" >
+    </LinearLayout>
+    <!-- 头部结束 -->
+    <!-- 时间字开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/setdateandtimeheight"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/setdateandtimepaddtop"
+            android:text="@string/setDateAndTime"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/setdateandtimetextsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 时间字结束 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/clockiconheight"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/clockiconleftblank" >
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clock_icon" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/clockiconrightblank" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dateheight"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingTop="@dimen/datepaddtop"
+                android:text="@string/date"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/datetextsize" />
+
+            <TextView
+                android:layout_width="@dimen/daterightblank"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/dateVal"
+                android:layout_width="@dimen/datevalwidth"
+                android:layout_height="fill_parent"
+                android:paddingLeft="@dimen/datevalpaddleft"
+                android:paddingTop="@dimen/datevalpaddtop"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/datevaltextsize" />
+
+            <TextView
+                android:layout_width="@dimen/datevalrightblank"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/dateSet"
+                android:layout_width="@dimen/datesetwidth"
+                android:layout_height="@dimen/datesetheight"
+                android:background="@drawable/box_icon"
+                android:gravity="center"
+                android:text="@string/settings"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/datesettextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line_h_0" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/timeheight"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingTop="@dimen/timepaddtop"
+                android:text="@string/time"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/timetextsize" />
+
+            <TextView
+                android:layout_width="@dimen/timerightblank"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/timeVal"
+                android:layout_width="@dimen/timevalwidth"
+                android:layout_height="fill_parent"
+                android:paddingLeft="@dimen/timevalpaddleft"
+                android:paddingTop="@dimen/timevalpaddtop"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/timevaltextsize" />
+
+            <TextView
+                android:layout_width="@dimen/timevalrightblank"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/timeSet"
+                android:layout_width="@dimen/timesetwidth"
+                android:layout_height="@dimen/timesetheight"
+                android:background="@drawable/box_icon"
+                android:gravity="center"
+                android:text="@string/settings"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/timesettextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line_h_0" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

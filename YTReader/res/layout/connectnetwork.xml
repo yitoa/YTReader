@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/connectView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <!-- 头部开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="7dp" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/settings" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:text="@string/settings"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/wifiConnback"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:paddingRight="20dp"
+                android:paddingTop="3dp"
+                android:src="@drawable/back1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="5dp" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/thick_line_h" >
+    </LinearLayout>
+    <!-- 头部结束 -->
+    <!-- 网络连接开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/conssid"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/signstr"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/security"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/edit_pwd" >
+
+            <EditText
+                android:id="@+id/wifipassword"
+                android:layout_width="190dp"
+                android:layout_height="38dp"
+                android:background="@null"
+                android:hint="@string/wifipassword"
+                android:paddingLeft="3dp"
+                android:paddingTop="4dp"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="10dp" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3" >
+
+            <CheckBox
+                android:id="@+id/isshowwifipwd"
+                style="@style/wificheckboxstyles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp" />
+
+            <TextView
+                android:id="@+id/showpwd"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingTop="10dp"
+                android:text="@string/hidepwd" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_search"
+            android:gravity="center"
+            android:text="@string/connect"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/connfails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="@string/connfials"
+            android:textColor="@android:color/black"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

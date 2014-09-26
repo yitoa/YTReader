@@ -1,0 +1,287 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <!-- 头部开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/networktopblank" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/networktop"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/networksettingsimagepaddleft"
+                android:paddingTop="@dimen/networksettingsimagepaddtop"
+                android:src="@drawable/settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/networksettingstextpaddleft"
+                android:paddingTop="@dimen/networksettingstextpaddtop"
+                android:text="@string/settings"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/networksettingstextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="@dimen/networknetbackleftblank"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/netback"
+                android:layout_width="@dimen/networknetbackwidth"
+                android:layout_height="@dimen/networknetbackheight"
+                android:paddingTop="@dimen/networknetbackpaddtop"
+                android:src="@drawable/back1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/networkttopbottom" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/thick_line_h" >
+    </LinearLayout>
+    <!-- 头部结束 -->
+    <!-- 网络设置开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/networkheight"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/networkpaddtop"
+            android:text="@string/network"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/networkpaddtextsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 网络设置结束 -->
+
+
+    <!-- wifi设置开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/wifiheight"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="@dimen/wifipaddleft"
+                android:text="@string/wifi"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/wifitextsize" />
+
+            <TextView
+                android:id="@+id/wifistate"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/wifistatepaddleft"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/wifistatetextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right" >
+
+            <CheckBox
+                android:id="@+id/checkwifi"
+                style="@style/wificheckboxstyles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/checkwifipaddright" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- wifi设置结束 -->
+
+
+    <!-- 附近网络 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nearnetheight"
+        android:background="@color/grey"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="@dimen/nearnetpaddleft"
+            android:paddingTop="@dimen/nearnetpaddtop"
+            android:text="@string/nearNet"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/nearnettextsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 附近网络结束 -->
+
+
+    <!-- 搜索周围网络开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/wifilistheight" >
+
+        <ListView
+            android:id="@+id/wifilist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null" >
+        </ListView>
+    </LinearLayout>
+    <!-- 搜素周围网络结束 -->
+
+
+    <!-- 底部分页开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/networkpageheight" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal" >
+
+            <ImageButton
+                android:id="@+id/netleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="@dimen/netleftpaddtop"
+                android:src="@drawable/arrow_1" />
+
+            <TextView
+                android:layout_width="@dimen/pageleftblank"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/page"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/pagetextsize" />
+
+            <TextView
+                android:layout_width="@dimen/pagerightblank"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/netcurrentPageCase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/pagetextsize" />
+
+            <TextView
+                android:layout_width="@dimen/pagerightblank"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/of"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/pagetextsize" />
+
+            <TextView
+                android:layout_width="@dimen/pagerightblank"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/nettotalPageCase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/pagetextsize" />
+
+            <TextView
+                android:layout_width="@dimen/pageleftblank"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/netright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="@dimen/netleftpaddtop"
+                android:src="@drawable/arrow_2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 底部分页结束 -->
+
+</LinearLayout>

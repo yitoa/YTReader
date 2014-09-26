@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <!-- 头部开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/topblankllheight" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/topllheight"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3" >
+
+            <TextView
+                android:layout_width="@dimen/leftblanktext"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/jiluimagepaddtop"
+                android:src="@drawable/jilu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/morerecentlytextpaddleft"
+                android:paddingTop="@dimen/morerecentlytextpaddtop"
+                android:text="@string/recently"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/morerecentlytextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/morebookBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/thick_line_h" >
+    </LinearLayout>
+    <!-- 头部结束 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/clearAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/buttonselector"
+            android:text="@string/content_clearall"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/morelistllheightport" >
+
+        <ListView
+            android:id="@+id/morebookslist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null" >
+        </ListView>
+    </LinearLayout>
+    <!-- 底部分页开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/morebottomllheight" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal" >
+
+            <ImageButton
+                android:id="@+id/moreleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="@dimen/moreleftbuttonpaddtop"
+                android:src="@drawable/arrow_1" />
+
+            <TextView
+                android:layout_width="@dimen/moremiddletextblank"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/page"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/morepagetextsize" />
+
+            <TextView
+                android:layout_width="@dimen/morepagemidblanktext"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/currentPagebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/morepagetextsize" />
+
+            <TextView
+                android:layout_width="@dimen/morepagemidblanktext"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/of"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/morepagetextsize" />
+
+            <TextView
+                android:layout_width="@dimen/morepagemidblanktext"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/totalPagebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/morepagetextsize" />
+
+            <TextView
+                android:layout_width="@dimen/moremiddletextblank"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/moreright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="@dimen/moreleftbuttonpaddtop"
+                android:src="@drawable/arrow_2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 底部分页结束 -->
+
+</LinearLayout>

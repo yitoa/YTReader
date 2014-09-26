@@ -1,0 +1,462 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <!-- 头部开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/srceentopblank" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/srceentopheight"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/srceensettingspaddleft"
+                android:paddingTop="@dimen/srceensettingspaddtop"
+                android:src="@drawable/settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/srceensettingstextpaddleft"
+                android:paddingTop="@dimen/srceensettingstextpaddtop"
+                android:text="@string/settings"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/srceensettingstextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="@dimen/srceenbackleft"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/screenback"
+                android:layout_width="@dimen/srceenbackwidth"
+                android:layout_height="@dimen/srceenbackheight"
+                android:paddingTop="@dimen/srceenbackpaddtop"
+                android:src="@drawable/back1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/srceentopbottom" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/thick_line_h" >
+    </LinearLayout>
+    <!-- 头部结束 -->
+    <!-- 屏幕字开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/srceenheight"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/srceenpaddtop"
+            android:text="@string/screen"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/srceentextsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 屏幕字结束 -->
+    <!-- 横竖屏切换  开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/horverheight"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/horverpaddleft"
+                android:paddingTop="@dimen/horverpaddtop"
+                android:text="@string/horver"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/horvertextsize" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/screenswitchingpaddleft"
+                android:text="@string/screenSwitching"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/screenswitchingtextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/horverrgleftblank" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioGroup
+                    android:id="@+id/horVer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:paddingTop="@dimen/horscreenpaddtop"
+                        android:text="@string/horScreen"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/horscreentextsize" />
+
+                    <TextView
+                        android:layout_width="@dimen/horscreenrightblank"
+                        android:layout_height="fill_parent" />
+
+                    <RadioButton
+                        android:id="@+id/horRadio"
+                        style="@style/MyRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/horradioheight"
+                        android:paddingLeft="@dimen/horradiopaddleft"
+                        android:paddingTop="@dimen/horradiopaddtop" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:paddingTop="@dimen/horscreenpaddtop"
+                        android:text="@string/verScreen"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/horscreentextsize" />
+
+                    <TextView
+                        android:layout_width="@dimen/horscreenrightblank"
+                        android:layout_height="fill_parent" />
+
+                    <RadioButton
+                        android:id="@+id/verRadio"
+                        style="@style/MyRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/horradioheight"
+                        android:paddingLeft="@dimen/horradiopaddleft"
+                        android:paddingTop="@dimen/horradiopaddtop" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" />
+    <!-- 横竖屏切换  结束 -->
+
+
+    <!-- 延迟屏保  开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/screentimeoutheight"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/screentimeout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/screentimeoutpaddleft"
+                android:paddingTop="@dimen/screentimeoutpaddtop"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/screentimeouttextsize" />
+
+            <TextView
+                android:layout_width="@dimen/screentoenterwidth"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/screentoenterpaddleft"
+                android:text="@string/toEnter"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/screentoentertextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="right" >
+
+            <ImageView
+                android:id="@+id/showtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/showtimepaddtop"
+                android:src="@drawable/s_arror_d" />
+
+            <TextView
+                android:layout_width="@dimen/showtimerightblank"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" />
+    <!-- 延迟屏保  结束 -->
+    <!-- 时间列表  开始 -->
+
+    <LinearLayout
+        android:id="@+id/timelist"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/timelistheight"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/oneMin"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/oneminheight" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:paddingLeft="@dimen/oneminpaddleft"
+                android:paddingTop="@dimen/oneminpaddtop"
+                android:text="@string/oneMin"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/onemintextsize" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="@dimen/oneminselectleftblank"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/oneMinSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/oneminselectmartop"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line_h_0" />
+
+        <LinearLayout
+            android:id="@+id/twoMin"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/twominheight" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:paddingLeft="@dimen/twominpaddleft"
+                android:paddingTop="@dimen/twominpaddtop"
+                android:text="@string/twoMin"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/twomintextsize" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="@dimen/twominselectleftblank"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/twoMinSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twominselectmartop"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line_h_0" />
+
+        <LinearLayout
+            android:id="@+id/fiveMin"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fiveminheight" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:paddingLeft="@dimen/fiveminpaddleft"
+                android:paddingTop="@dimen/fiveminpaddtop"
+                android:text="@string/fiveMin"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/fivemintextsize" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="@dimen/fiveminselectleftblank"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/fiveMinSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fiveminselectmartop"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line_h_0" />
+
+        <LinearLayout
+            android:id="@+id/fifthMin"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fiveminheight" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:paddingLeft="@dimen/fiveminpaddleft"
+                android:paddingTop="@dimen/fiveminpaddtop"
+                android:text="@string/fifthMin"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/fivemintextsize" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="@dimen/fiveminselectleftblank"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/fifthMinSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fiveminselectmartop"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line_h_0" />
+
+        <LinearLayout
+            android:id="@+id/onehour"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fiveminheight" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:paddingLeft="@dimen/fiveminpaddleft"
+                android:paddingTop="@dimen/fiveminpaddtop"
+                android:text="@string/onehour"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/fivemintextsize" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="@dimen/fiveminselectleftblank"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/onehourSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fiveminselectmartop"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line_h_0" />
+    </LinearLayout>
+    <!-- 时间列表结束 -->
+
+</LinearLayout>

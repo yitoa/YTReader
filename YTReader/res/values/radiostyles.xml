@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyRadio" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@layout/radio_selector</item>
+    </style>
+</resources>

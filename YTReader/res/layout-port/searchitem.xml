@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/listitemselector"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/searchitemwidth"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/morebooksIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/morebooksiconpaddleft" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4" >
+
+            <TextView
+                android:id="@+id/morebooksname"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingLeft="@dimen/morebooksnamepaddleft"
+                android:paddingTop="@dimen/morebooksnamepaddtop"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/morebooksnametextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <TextView
+                android:id="@+id/moreauthorOrTime"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingRight="@dimen/moreauthorortimepaddright"
+                android:paddingTop="@dimen/moreauthorortimepaddtop"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/moreauthorortimetextsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" />
+
+</LinearLayout>

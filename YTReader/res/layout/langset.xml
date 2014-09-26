@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <!-- 头部开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/langsettopblank" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/langsettopheight"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/langsetsettingsimagepaddleft"
+                android:paddingTop="@dimen/langsetsettingsimagepaddtop"
+                android:src="@drawable/settings" />
+
+            <TextView
+                android:layout_width="@dimen/langsetsettingstextwidth"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/langsetsettingstextpaddleft"
+                android:paddingTop="@dimen/langsetsettingstextpaddtop"
+                android:text="@string/settings"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/langsetsettingstextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="@dimen/langsetlangbackleftblank"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/langback"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingTop="@dimen/langsetlangbackpaddtop"
+                android:src="@drawable/back1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/langsettopbottonblank" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/thick_line_h" >
+    </LinearLayout>
+    <!-- 头部结束 -->
+    <!-- 语言设置开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/langsetheight"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/langsetpaddtop"
+            android:text="@string/langSet"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/langsettextsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 语言设置结束 -->
+
+
+    <!-- 中文开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/langsetzhandenheight"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/zh"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/langsetzhheight" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:paddingLeft="@dimen/langsetzhpaddleft"
+                android:paddingTop="@dimen/langsetzhpaddtop"
+                android:text="@string/zh"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/langsetzhtextsize" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="@dimen/langsetzhselectleftblank"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/zhSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/langsetzhmartop"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line_h_0" />
+
+        <LinearLayout
+            android:id="@+id/en"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/langsetenheight" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:paddingLeft="@dimen/langsetenpaddleft"
+                android:paddingTop="@dimen/langsetenpaddtop"
+                android:text="@string/en"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/langsetentextsize" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="@dimen/langsetenselectleftblank"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/enSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/langsetenselectmartop"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line_h_0" />
+    </LinearLayout>
+
+</LinearLayout>

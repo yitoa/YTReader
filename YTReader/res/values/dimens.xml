@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主页面 main.xml 开始 -->
+    <!-- 头部尺寸   开始 -->
+    <dimen name="mainhead">50dp</dimen>
+    <dimen name="mainimagewidth">60dp</dimen>
+    <dimen name="mainimageleft">30dp</dimen>
+    <dimen name="mainimagetop">20dp</dimen>
+    <dimen name="hometextwidth">100dp</dimen>
+    <dimen name="hometextpaddleft">10dp</dimen>
+    <dimen name="hometextpaddtop">20dp</dimen>
+    <dimen name="hometextsize">24dp</dimen>
+    <dimen name="setimagepaddright">30dp</dimen>
+    <dimen name="setimagepaddtop">20dp</dimen>
+    <!-- 头部尺寸  结束 -->
+    <!-- 中间部分 开始 -->
+    <dimen name="middleheight">240dp</dimen>
+    <dimen name="readingtextpaddtop">19dp</dimen>
+    <dimen name="bookcoverheight">110dp</dimen>
+    <dimen name="bookcovermargleft">20dp</dimen>
+    <dimen name="bookcovermargtop">10dp</dimen>
+    <dimen name="bookcovermargleftport">10dp</dimen>
+    <dimen name="bookcovermargtopport">25dp</dimen>
+    <dimen name="booktextsize">16dp</dimen>
+    <dimen name="currentpagetextpaddleft">20dp</dimen>
+    <dimen name="currentpagetextpaddtop">40dp</dimen>
+    <dimen name="currentpagetextsize">30dp</dimen>
+    <dimen name="totalpagetextpaddleft">55dp</dimen>
+    <dimen name="totalpagetextsize">14dp</dimen>
+    <dimen name="recentlytextpaddtop">19dp</dimen>
+    <dimen name="recentlytextsize">24dp</dimen>
+    <dimen name="markimagepaddleft">20dp</dimen>
+    <dimen name="markimagepaddtop">5dp</dimen>
+    <dimen name="morebuttontextsize">15dp</dimen>
+    <!-- 中间部分  结束 -->
+    <!-- 首页面的电子书柜  开始 -->
+    <dimen name="basecaseheight">30dp</dimen>
+    <dimen name="basecaseheightport">60dp</dimen>
+    <!-- 首页面的电子书柜  结束 -->
+    <!-- 首页面新书上架  开始 -->
+    <dimen name="newbookheight">150dp</dimen>
+    <!-- 首页面新书上架  结束 -->
+    <!-- 主页面 main.xml 结束 -->
+
+
+    <!-- 最近阅读列表booklist.xml 开始 -->
+    <dimen name="booknamepaddleft">5dp</dimen>
+    <dimen name="booknamepaddtop">7dp</dimen>
+    <dimen name="booknamepaddleftport">5dp</dimen>
+    <dimen name="booknamepaddtopport">4dp</dimen>
+    <dimen name="booknametextsize">18dp</dimen>
+    <dimen name="booklistllheight">35dp</dimen>
+    <dimen name="booklistllheightport">31dp</dimen>
+    <dimen name="authortextpaddright">7dp</dimen>
+    <dimen name="authortextpaddtop">7dp</dimen>
+    <dimen name="authortextsize">18dp</dimen>
+    <dimen name="authortextpaddtopport">4dp</dimen>
+    <!-- 最近阅读列表booklist.xml  结束 -->
+
+
+    <!-- 更多阅读记录   morelist.xml  开始 -->
+    <!-- 头部部分 开始 -->
+    <dimen name="topblankllheight">7dp</dimen>
+    <dimen name="topllheight">33dp</dimen>
+    <dimen name="leftblanktext">20dp</dimen>
+    <dimen name="jiluimagepaddtop">5dp</dimen>
+    <dimen name="morerecentlytextpaddleft">10dp</dimen>
+    <dimen name="morerecentlytextpaddtop">3dp</dimen>
+    <dimen name="morerecentlytextsize">24dp</dimen>
+    <!-- 头部部分 结束 -->
+    <!-- 列表部分  开始 -->
+    <dimen name="morelistllheight">340dp</dimen>
+    <dimen name="morelistllheightport">500dp</dimen>
+    <!-- 列表部分  结束 -->
+    <!-- 底部  开始 -->
+    <dimen name="morebottomllheight">25dp</dimen>
+    <dimen name="moreleftbuttonpaddtop">8dp</dimen>
+    <dimen name="moremiddletextblank">10dp</dimen>
+    <dimen name="morepagetextsize">12dp</dimen>
+    <dimen name="morepagemidblanktext">3dp</dimen>
+    <!-- 底部  结束 -->
+    <!-- 更多阅读记录  morelist.xml  结束 -->
+
+
+    <!-- 电子书柜 bookcase.xml 开始 -->
+    <!-- 头部 开始 -->
+    <dimen name="bctopblankllheight">7dp</dimen>
+    <dimen name="bctopllheight">33dp</dimen>
+    <dimen name="iconbooksimagepaddleft">20dp</dimen>
+    <dimen name="iconbooksimagepaddtop">5dp</dimen>
+    <dimen name="ebookcasetextpaddleft">10dp</dimen>
+    <dimen name="ebookcasetextpaddtop">3dp</dimen>
+    <dimen name="ebookcasetextsize">24dp</dimen>
+    <dimen name="searchmidblanktext">15dp</dimen>
+    <dimen name="bcbackbuttonmarleft">15dp</dimen>
+    <dimen name="bcbackbuttonmarright">20dp</dimen>
+    <!-- 头部 结束 -->
+    <!-- 中间  开始 -->
+    <dimen name="bclisttopblankllheight">10dp</dimen>
+    <dimen name="bclistllheight">30dp</dimen>
+    <dimen name="showtypeleftblankwidth">10dp</dimen>
+    <dimen name="showtypepaddleft">5dp</dimen>
+    <dimen name="showtypepaddtop">3dp</dimen>
+    <dimen name="showtypemiddwith">10dp</dimen>
+    <dimen name="showtypewidth">100dp</dimen>
+    <dimen name="showtypemarleft">10dp</dimen>
+    <dimen name="arrangepaddleft">5dp</dimen>
+    <dimen name="arrangepaddtop">3dp</dimen>
+    <dimen name="arrangewidth">100dp</dimen>
+    <dimen name="arrangemarleft">10dp</dimen>
+    <dimen name="phoneselmidblank">15dp</dimen>
+    <dimen name="sdselmarleft">15dp</dimen>
+    <dimen name="sdselmarright">20dp</dimen>
+    <dimen name="allbooksllheight">31dp</dimen>
+    <dimen name="allbookswidth">200dp</dimen>
+    <dimen name="allbookspaddleft">20dp</dimen>
+    <dimen name="allbookspaddtop">7dp</dimen>
+    <dimen name="allbookstextsize">16dp</dimen>
+    <dimen name="uplevelllheight">40dp</dimen>
+    <dimen name="uplevelinnerheight">38dp</dimen>
+    <dimen name="uplevelimageheight">38dp</dimen>
+    <dimen name="uplevelimagepaddleft">18dp</dimen>
+    <dimen name="upleveltextpaddleft">45dp</dimen>
+    <dimen name="upleveltextpaddleftport">25dp</dimen>
+    <dimen name="upleveltextpaddtop">7dp</dimen>
+    <dimen name="upleveltextsize">18dp</dimen>
+    <dimen name="booklistheight">270dp</dimen>
+    <!-- 中间 结束 -->
+    <!-- 底部开始 -->
+    <dimen name="bcbottomheight">25dp</dimen>
+    <dimen name="bcbottomlefttop">8dp</dimen>
+    <dimen name="bcbottomleftmidblank">10dp</dimen>
+    <dimen name="bcbottomtextsize">12dp</dimen>
+    <dimen name="bcbottompagemidblank">3dp</dimen>
+    <dimen name="bcdeleteimagepaddleft">98dp</dimen>
+    <dimen name="bcdeleteimagepaddleftport">30dp</dimen>
+    <!-- 底部结束 -->
+    <!-- 电子书柜 bookcase.xml 结束 -->
+
+
+    <!-- 查询页面 search.xml 开始 -->
+    <dimen name="searchtopblankll">15dp</dimen>
+    <dimen name="searchedleftblanktext">28dp</dimen>
+    <dimen name="searchedwidth">190dp</dimen>
+    <dimen name="searchedwidthport">150dp</dimen>
+    <dimen name="searchedheight">28dp</dimen>
+    <dimen name="searchdelimagepaddtop">6dp</dimen>
+    <dimen name="searchdelimagepaddleft">10dp</dimen>
+    <dimen name="searchlist">350dp</dimen>
+    <dimen name="searchlistport">500dp</dimen>
+    <dimen name="searchbottomll">25dp</dimen>
+    <dimen name="searchleftmidblank">10dp</dimen>
+    <dimen name="searchpagetextsize">12dp</dimen>
+    <dimen name="searchpagemidblank">3dp</dimen>
+    <!-- 查询页面 search.xml 结束 -->
+    <!-- 查询页面列表  searchitem.xml 开始 -->
+    <dimen name="searchitemwidth">35dp</dimen>
+    <dimen name="morebooksiconpaddleft">15dp</dimen>
+    <dimen name="morebooksnamepaddleft">5dp</dimen>
+    <dimen name="morebooksnamepaddtop">7dp</dimen>
+    <dimen name="morebooksnametextsize">18dp</dimen>
+    <dimen name="moreauthorortimepaddright">7dp</dimen>
+    <dimen name="moreauthorortimepaddtop">7dp</dimen>
+    <dimen name="moreauthorortimetextsize">18dp</dimen>
+    <!-- 查询页面列表  searchitem.xml 结束 -->
+
+
+    <!-- 设置 settings.xml开始 -->
+    <dimen name="topblankll">7dp</dimen>
+    <dimen name="topll">35dp</dimen>
+    <dimen name="settingsimagepaddleft">20dp</dimen>
+    <dimen name="settingsimagepaddtop">8dp</dimen>
+    <dimen name="settingstextpaddleft">10dp</dimen>
+    <dimen name="settingstextpaddtop">3dp</dimen>
+    <dimen name="settingstextsize">24dp</dimen>
+    <dimen name="setbackleftblank">10dp</dimen>
+    <dimen name="setbackwidth">35dp</dimen>
+    <dimen name="setbackheight">35dp</dimen>
+    <dimen name="setbackpaddtop">3dp</dimen>
+    <dimen name="settingsblank">5dp</dimen>
+    <dimen name="settingsproinforheight">40dp</dimen>
+    <dimen name="settingsproimagepaddleft">20dp</dimen>
+    <dimen name="settingsproinforimagepaddtop">10dp</dimen>
+    <dimen name="settingsproinforimagepaddtopv">14dp</dimen>
+    <dimen name="settingsproextpaddleft">20dp</dimen>
+    <dimen name="settingsprotextpaddtop">10dp</dimen>
+    <dimen name="settingsprotextsize">18dp</dimen>
+    <dimen name="settingsprorpaddleft">20dp</dimen>
+    <dimen name="settingsprorpaddtop">15dp</dimen>
+    <!-- 设置 settings.xml结束 -->
+
+
+    <!-- 产品信息 proinfo.xml开始 -->
+    <dimen name="proinfotopblank">7dp</dimen>
+    <dimen name="proinfotopwidth">35dp</dimen>
+    <dimen name="proinfosettingsimagepaddleft">20dp</dimen>
+    <dimen name="proinfosettingsimagepaddtop">8dp</dimen>
+    <dimen name="proinfosettingstextpaddleft">10dp</dimen>
+    <dimen name="proinfosettingstextpaddtop">3dp</dimen>
+    <dimen name="proinfosettingstextsize">24dp</dimen>
+    <dimen name="proinfobackleftblank">10dp</dimen>
+    <dimen name="proinfobackwidth">35dp</dimen>
+    <dimen name="proinfobackheight">35dp</dimen>
+    <dimen name="proinfobackpaddtop">3dp</dimen>
+    <dimen name="proinfomessheight">40dp</dimen>
+    <dimen name="proinfomesstextpaddtop">10dp</dimen>
+    <dimen name="proinfomesstextsize">18dp</dimen>
+    <dimen name="proinfocomanypaddleft">20dp</dimen>
+    <dimen name="proinfocomanytextsize">16dp</dimen>
+    <dimen name="proinfocomanynamepaddleft">20dp</dimen>
+    <dimen name="proinfocomanynametextsize">12dp</dimen>
+    <dimen name="proinfomodelpaddleft">20dp</dimen>
+    <dimen name="proinfomodeltextsize">16dp</dimen>
+    <dimen name="proinfomodelnamepaddleft">20dp</dimen>
+    <dimen name="proinfomodelmametextsize">12dp</dimen>
+    <dimen name="batteryResulttextheight">24dp</dimen>
+    <dimen name="batteryResultpaddleft">202dp</dimen>
+    <dimen name="batteryResulttextsize">12dp</dimen>
+    <dimen name="progresswidth">230dp</dimen>
+    <dimen name="progressheight">16dp</dimen>
+    <dimen name="progresspaddbottom">10dp</dimen>
+    <!-- 产品信息 proinfo.xml结束 -->
+
+
+    <!-- 语言设置开始 langset.xml开始 -->
+    <dimen name="langsettopblank">7dp</dimen>
+    <dimen name="langsettopheight">35dp</dimen>
+    <dimen name="langsetsettingsimagepaddleft">20dp</dimen>
+    <dimen name="langsetsettingsimagepaddtop">8dp</dimen>
+    <dimen name="langsetsettingstextwidth">200dp</dimen>
+    <dimen name="langsetsettingstextpaddleft">10dp</dimen>
+    <dimen name="langsetsettingstextpaddtop">3dp</dimen>
+    <dimen name="langsetsettingstextsize">24dp</dimen>
+    <dimen name="langsetlangbackleftblank">10dp</dimen>
+    <dimen name="langsetlangbackpaddtop">3dp</dimen>
+    <dimen name="langsettopbottonblank">5dp</dimen>
+    <dimen name="langsetheight">40dp</dimen>
+    <dimen name="langsetpaddtop">10dp</dimen>
+    <dimen name="langsettextsize">18dp</dimen>
+    <dimen name="langsetzhandenheight">65dp</dimen>
+    <dimen name="langsetzhheight">30dp</dimen>
+    <dimen name="langsetzhpaddleft">20dp</dimen>
+    <dimen name="langsetzhpaddtop">5dp</dimen>
+    <dimen name="langsetzhtextsize">18dp</dimen>
+    <dimen name="langsetzhselectleftblank">40dp</dimen>
+    <dimen name="langsetzhmartop">5dp</dimen>
+    <dimen name="langsetenheight">30dp</dimen>
+    <dimen name="langsetenpaddleft">20dp</dimen>
+    <dimen name="langsetenpaddtop">5dp</dimen>
+    <dimen name="langsetentextsize">18dp</dimen>
+    <dimen name="langsetenselectleftblank">40dp</dimen>
+    <dimen name="langsetenselectmartop">5dp</dimen>
+    <!-- 语言设置结束 langset.xml结束 -->
+
+
+    <!-- 网络设置  network.xml 开始 -->
+    <dimen name="networktopblank">7dp</dimen>
+    <dimen name="networktop">35dp</dimen>
+    <dimen name="networksettingsimagepaddleft">20dp</dimen>
+    <dimen name="networksettingsimagepaddtop">8dp</dimen>
+    <dimen name="networksettingstextpaddleft">10dp</dimen>
+    <dimen name="networksettingstextpaddtop">3dp</dimen>
+    <dimen name="networksettingstextsize">24dp</dimen>
+    <dimen name="networknetbackleftblank">10dp</dimen>
+    <dimen name="networknetbackwidth">35dp</dimen>
+    <dimen name="networknetbackheight">35dp</dimen>
+    <dimen name="networknetbackpaddtop">3dp</dimen>
+    <dimen name="networkttopbottom">5dp</dimen>
+    <dimen name="networkheight">40dp</dimen>
+    <dimen name="networkpaddtop">10dp</dimen>
+    <dimen name="networkpaddtextsize">18dp</dimen>
+    <dimen name="wifiheight">50dp</dimen>
+    <dimen name="wifipaddleft">20dp</dimen>
+    <dimen name="wifitextsize">16dp</dimen>
+    <dimen name="wifistatepaddleft">20dp</dimen>
+    <dimen name="wifistatetextsize">12dp</dimen>
+    <dimen name="checkwifipaddright">20dp</dimen>
+    <dimen name="nearnetheight">40dp</dimen>
+    <dimen name="nearnetpaddleft">20dp</dimen>
+    <dimen name="nearnetpaddtop">7dp</dimen>
+    <dimen name="nearnettextsize">20dp</dimen>
+    <dimen name="wifilistheight">300dp</dimen>
+    <dimen name="wifilistheightport">350dp</dimen>
+    <dimen name="networkpageheight">25dp</dimen>
+    <dimen name="netleftpaddtop">8dp</dimen>
+    <dimen name="pageleftblank">10dp</dimen>
+    <dimen name="pagetextsize">12dp</dimen>
+    <dimen name="pagerightblank">3dp</dimen>
+    <!-- 网络设置 network.xml 结束 -->
+
+
+    <!-- 网络设置列表 networkitem.xml 开始 -->
+    <dimen name="networkitemheight">50dp</dimen>
+    <dimen name="ssidpaddleft">20dp</dimen>
+    <dimen name="ssidtextsize">16dp</dimen>
+    <dimen name="securedpaddleft">20dp</dimen>
+    <dimen name="securedtextsize">12dp</dimen>
+    <!-- 网络设置列表 networkitem.xml 结束 -->
+
+
+    <!-- 屏幕设置srceen.xml开始 -->
+    <dimen name="srceentopblank">7dp</dimen>
+    <dimen name="srceentopheight">35dp</dimen>
+    <dimen name="srceensettingspaddleft">20dp</dimen>
+    <dimen name="srceensettingspaddtop">8dp</dimen>
+    <dimen name="srceensettingstextpaddleft">10dp</dimen>
+    <dimen name="srceensettingstextpaddtop">3dp</dimen>
+    <dimen name="srceensettingstextsize">24dp</dimen>
+    <dimen name="srceenbackleft">10dp</dimen>
+    <dimen name="srceenbackwidth">35dp</dimen>
+    <dimen name="srceenbackheight">35dp</dimen>
+    <dimen name="srceenbackpaddtop">3dp</dimen>
+    <dimen name="srceentopbottom">5dp</dimen>
+    <dimen name="srceenheight">40dp</dimen>
+    <dimen name="srceenpaddtop">10dp</dimen>
+    <dimen name="srceentextsize">18dp</dimen>
+    <dimen name="horverheight">50dp</dimen>
+    <dimen name="horverpaddleft">20dp</dimen>
+    <dimen name="horverpaddtop">5dp</dimen>
+    <dimen name="horvertextsize">18dp</dimen>
+    <dimen name="screenswitchingpaddleft">20dp</dimen>
+    <dimen name="screenswitchingtextsize">12dp</dimen>
+    <dimen name="horverrgleftblank">10dp</dimen>
+    <dimen name="horscreenpaddtop">5dp</dimen>
+    <dimen name="horscreentextsize">12dp</dimen>
+    <dimen name="horscreenrightblank">3dp</dimen>
+    <dimen name="horradioheight">25dp</dimen>
+    <dimen name="horradiopaddleft">20dp</dimen>
+    <dimen name="horradiopaddtop">5dp</dimen>
+    <dimen name="screentimeoutheight">50dp</dimen>
+    <dimen name="screentimeoutpaddleft">20dp</dimen>
+    <dimen name="screentimeoutpaddtop">5dp</dimen>
+    <dimen name="screentimeouttextsize">18dp</dimen>
+    <dimen name="screentoenterwidth">200dp</dimen>
+    <dimen name="screentoenterpaddleft">20dp</dimen>
+    <dimen name="screentoentertextsize">12dp</dimen>
+    <dimen name="showtimepaddtop">20dp</dimen>
+    <dimen name="showtimerightblank">60dp</dimen>
+    <dimen name="timelistheight">210dp</dimen>
+    <dimen name="oneminheight">30dp</dimen>
+    <dimen name="oneminpaddleft">20dp</dimen>
+    <dimen name="oneminpaddtop">5dp</dimen>
+    <dimen name="onemintextsize">12dp</dimen>
+    <dimen name="oneminselectleftblank">40dp</dimen>
+    <dimen name="oneminselectmartop">5dp</dimen>
+    <dimen name="twominheight">30dp</dimen>
+    <dimen name="twominpaddleft">20dp</dimen>
+    <dimen name="twominpaddtop">5dp</dimen>
+    <dimen name="twomintextsize">12dp</dimen>
+    <dimen name="twominselectleftblank">40dp</dimen>
+    <dimen name="twominselectmartop">5dp</dimen>
+    <dimen name="fiveminheight">30dp</dimen>
+    <dimen name="fiveminpaddleft">20dp</dimen>
+    <dimen name="fiveminpaddtop">5dp</dimen>
+    <dimen name="fivemintextsize">12dp</dimen>
+    <dimen name="fiveminselectleftblank">40dp</dimen>
+    <dimen name="fiveminselectmartop">5dp</dimen>
+    <!-- 屏幕设置srceen.xml结束 -->
+
+
+    <!-- 翻页效果 pageturn.xml开始 -->
+    <dimen name="pageturntopblank">7dp</dimen>
+    <dimen name="pageturntop">35dp</dimen>
+    <dimen name="pageturnsettingspaddleft">20dp</dimen>
+    <dimen name="pageturnsettingspaddtop">8dp</dimen>
+    <dimen name="pageturnsettingstextwidth">200dp</dimen>
+    <dimen name="pageturnsettingstextpaddleft">10dp</dimen>
+    <dimen name="pageturnsettingstextpaddtop">3dp</dimen>
+    <dimen name="pageturnsettingstextsize">24dp</dimen>
+    <dimen name="pageturnpagebackleftblank">10dp</dimen>
+    <dimen name="pageturnpagebackpaddtop">3dp</dimen>
+    <dimen name="pageturntopbottom">5dp</dimen>
+    <dimen name="pageturnheight">40dp</dimen>
+    <dimen name="pageturnpaddtop">10dp</dimen>
+    <dimen name="pageturntextsize">18dp</dimen>
+    <dimen name="pageturnsheight">65dp</dimen>
+    <dimen name="pageturncurlheight">30dp</dimen>
+    <dimen name="pageturncurlpaddleft">20dp</dimen>
+    <dimen name="pageturncurlpaddtop">5dp</dimen>
+    <dimen name="pageturncurltextsize">18dp</dimen>
+    <dimen name="pageturnCurlselectleftblank">40dp</dimen>
+    <dimen name="pageturnCurlselectmartop">5dp</dimen>
+    <!-- 翻页效果pageturn.xml结束 -->
+
+
+    <!-- 时间日期设置dateandtime.xml 开始 -->
+    <dimen name="timetopblank">7dp</dimen>
+    <dimen name="timetopheight">35dp</dimen>
+    <dimen name="timesettingspaddleft">20dp</dimen>
+    <dimen name="timesettingspaddtop">8dp</dimen>
+    <dimen name="timesettingstextwidth">200dp</dimen>
+    <dimen name="timesettingstextpaddleft">10dp</dimen>
+    <dimen name="timesettingstextpaddtop">3dp</dimen>
+    <dimen name="timesettingstextsize">24dp</dimen>
+    <dimen name="datebackleftblank">10dp</dimen>
+    <dimen name="datebackwidth">35dp</dimen>
+    <dimen name="datebackheight">35dp</dimen>
+    <dimen name="datebackpaddtop">3dp</dimen>
+    <dimen name="datebacktopbottom">5dp</dimen>
+    <dimen name="setdateandtimeheight">40dp</dimen>
+    <dimen name="setdateandtimepaddtop">10dp</dimen>
+    <dimen name="setdateandtimetextsize">18dp</dimen>
+    <dimen name="clockiconheight">220dp</dimen>
+    <dimen name="clockiconleftblank">20dp</dimen>
+    <dimen name="clockiconrightblank">30dp</dimen>
+    <dimen name="dateheight">50dp</dimen>
+    <dimen name="datepaddtop">15dp</dimen>
+    <dimen name="datetextsize">16dp</dimen>
+    <dimen name="daterightblank">30dp</dimen>
+    <dimen name="datevalwidth">120dp</dimen>
+    <dimen name="datevalpaddleft">10dp</dimen>
+    <dimen name="datevalpaddtop">15dp</dimen>
+    <dimen name="datevaltextsize">16dp</dimen>
+    <dimen name="datevalrightblank">30dp</dimen>
+    <dimen name="datesetwidth">50dp</dimen>
+    <dimen name="datesetheight">20dp</dimen>
+    <dimen name="datesettextsize">14dp</dimen>
+    <dimen name="timeheight">50dp</dimen>
+    <dimen name="timepaddtop">15dp</dimen>
+    <dimen name="timetextsize">16dp</dimen>
+    <dimen name="timerightblank">30dp</dimen>
+    <dimen name="timevalwidth">120dp</dimen>
+    <dimen name="timevalpaddleft">10dp</dimen>
+    <dimen name="timevalpaddtop">15dp</dimen>
+    <dimen name="timevaltextsize">16dp</dimen>
+    <dimen name="timevalrightblank">30dp</dimen>
+    <dimen name="timesetwidth">50dp</dimen>
+    <dimen name="timesetheight">20dp</dimen>
+    <dimen name="timesettextsize">14dp</dimen>
+    <!-- 时间日期设置dateandtime.xml 结束 -->
+
+</resources>

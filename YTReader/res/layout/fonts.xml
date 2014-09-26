@@ -1,0 +1,310 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <!-- 头部开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="7dp" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:text="@string/settings"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/fontsback"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:paddingTop="3dp"
+                android:src="@drawable/back1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="5dp" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/thick_line_h" >
+    </LinearLayout>
+    <!-- 头部结束 -->
+    <!-- 字体开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/fonts"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 字体结束 -->
+    <!-- 字体列表  开始 -->
+
+    <LinearLayout
+        android:id="@+id/timelist"
+        android:layout_width="fill_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line_h_0" />
+
+        <LinearLayout
+            android:id="@+id/arial"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:text="Arial"
+                android:textColor="@android:color/black"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="fill_parent" />
+
+                <ImageView
+                    android:id="@+id/arialSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line_h_0" />
+
+        <LinearLayout
+            android:id="@+id/simhei"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:text="Simhei"
+                android:textColor="@android:color/black"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="fill_parent" />
+
+                <ImageView
+                    android:id="@+id/simheiSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line_h_0" />
+
+        <LinearLayout
+            android:id="@+id/calibri"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:text="Calibri"
+                android:textColor="@android:color/black"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="fill_parent" />
+
+                <ImageView
+                    android:id="@+id/calibriSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line_h_0" />
+
+        <LinearLayout
+            android:id="@+id/timesNewRoman"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:text="Times New Roman"
+                android:textColor="@android:color/black"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="fill_parent" />
+
+                <ImageView
+                    android:id="@+id/timesNewRomanSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line_h_0" />
+
+        <LinearLayout
+            android:id="@+id/verdana"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:text="Verdana"
+                android:textColor="@android:color/black"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="fill_parent" />
+
+                <ImageView
+                    android:id="@+id/verdanaSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line_h_0" />
+    </LinearLayout>
+
+    <!-- 时间列表结束 -->
+
+</LinearLayout>

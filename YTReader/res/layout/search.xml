@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/searchtopblankll" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@drawable/edit_search" >
+
+            <TextView
+                android:layout_width="@dimen/searchedleftblanktext"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/inputSearch"
+                android:layout_width="@dimen/searchedwidth"
+                android:layout_height="@dimen/searchedheight"
+                android:background="@null"
+                android:hint="@string/search"
+                android:textColor="@color/grey" />
+
+            <ImageView
+                android:id="@+id/searchdel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/searchdelimagepaddleft"
+                android:paddingTop="@dimen/searchdelimagepaddtop"
+                android:src="@drawable/btn_del"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <ImageButton
+                    android:id="@+id/searchBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="5dp" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/thick_line_h" >
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/searchList"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/searchlist" >
+    </ListView>
+
+    <!-- 底部分页开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/searchbottomll" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal" >
+
+            <ImageButton
+                android:id="@+id/searchleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="8dp"
+                android:src="@drawable/arrow_1" />
+
+            <TextView
+                android:layout_width="@dimen/searchleftmidblank"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/page"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/searchpagetextsize" />
+
+            <TextView
+                android:layout_width="@dimen/searchpagemidblank"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/currentPageSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/searchpagetextsize" />
+
+            <TextView
+                android:layout_width="@dimen/searchpagemidblank"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/of"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/searchpagetextsize" />
+
+            <TextView
+                android:layout_width="@dimen/searchpagemidblank"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/totalPageSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/searchpagetextsize" />
+
+            <TextView
+                android:layout_width="@dimen/searchleftmidblank"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/searchright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="8dp"
+                android:src="@drawable/arrow_2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 底部分页结束 -->
+
+</LinearLayout>

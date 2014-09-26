@@ -1,0 +1,536 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <!-- 头部开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/topblankll" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/topll"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/settingsimagepaddleft"
+                android:paddingTop="@dimen/settingsimagepaddtop"
+                android:src="@drawable/settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/settingstextpaddleft"
+                android:paddingTop="@dimen/settingstextpaddtop"
+                android:text="@string/settings"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/settingstextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="@dimen/setbackleftblank"
+                android:layout_height="fill_parent" />
+
+            <ImageView
+                android:id="@+id/setback"
+                android:layout_width="@dimen/setbackwidth"
+                android:layout_height="@dimen/setbackheight"
+                android:paddingTop="@dimen/setbackpaddtop"
+                android:src="@drawable/back1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/settingsblank" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/thick_line_h" >
+    </LinearLayout>
+    <!-- 头部结束 -->
+    <!-- 产品信息开始 -->
+
+    <LinearLayout
+        android:id="@+id/proInfor"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/settingsproinforheight" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/settingsproimagepaddleft"
+                android:paddingTop="@dimen/settingsproinforimagepaddtop"
+                android:src="@drawable/info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingLeft="@dimen/settingsproextpaddleft"
+                android:paddingTop="@dimen/settingsprotextpaddtop"
+                android:text="@string/proinfor"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/settingsprotextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/settingsprorpaddleft"
+                android:paddingTop="@dimen/settingsprorpaddtop"
+                android:src="@drawable/s_arror_r" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 产品信息结束 -->
+
+
+    <!-- 语言设置开始 -->
+
+    <LinearLayout
+        android:id="@+id/langSet"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/settingsproinforheight" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/settingsproimagepaddleft"
+                android:paddingTop="@dimen/settingsproinforimagepaddtopv"
+                android:src="@drawable/lang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingLeft="@dimen/settingsproextpaddleft"
+                android:paddingTop="@dimen/settingsprotextpaddtop"
+                android:text="@string/langSet"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/settingsprotextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/settingsprorpaddleft"
+                android:paddingTop="@dimen/settingsprorpaddtop"
+                android:src="@drawable/s_arror_r" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 语言设置结束 -->
+
+
+    <!-- 网络开始 -->
+
+    <LinearLayout
+        android:id="@+id/network"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/settingsproinforheight" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/settingsproimagepaddleft"
+                android:paddingTop="@dimen/settingsproinforimagepaddtopv"
+                android:src="@drawable/net" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingLeft="@dimen/settingsproextpaddleft"
+                android:paddingTop="@dimen/settingsprotextpaddtop"
+                android:text="@string/network"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/settingsprotextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/settingsprorpaddleft"
+                android:paddingTop="@dimen/settingsprorpaddtop"
+                android:src="@drawable/s_arror_r" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 网络结束 -->
+
+
+    <!-- 屏幕开始 -->
+
+    <LinearLayout
+        android:id="@+id/screen"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/settingsproinforheight" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/settingsproimagepaddleft"
+                android:paddingTop="@dimen/settingsproinforimagepaddtopv"
+                android:src="@drawable/screen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingLeft="@dimen/settingsproextpaddleft"
+                android:paddingTop="@dimen/settingsprotextpaddtop"
+                android:text="@string/screen"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/settingsprotextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/settingsprorpaddleft"
+                android:paddingTop="@dimen/settingsprorpaddtop"
+                android:src="@drawable/s_arror_r" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 屏幕结束 -->
+
+
+    <!-- 翻页效果设置开始 -->
+
+    <LinearLayout
+        android:id="@+id/pageTurn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/settingsproinforheight" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/settingsproimagepaddleft"
+                android:paddingTop="@dimen/settingsproinforimagepaddtop"
+                android:src="@drawable/pageturn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingLeft="@dimen/settingsproextpaddleft"
+                android:paddingTop="@dimen/settingsprotextpaddtop"
+                android:text="@string/pageTurn"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/settingsprotextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/settingsprorpaddleft"
+                android:paddingTop="@dimen/settingsprorpaddtop"
+                android:src="@drawable/s_arror_r" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 翻页效果设置结束 -->
+
+
+    <!-- 设置时间和日期 开始 -->
+
+    <LinearLayout
+        android:id="@+id/dateAndTime"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/settingsproinforheight" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/settingsproimagepaddleft"
+                android:paddingTop="@dimen/settingsproinforimagepaddtopv"
+                android:src="@drawable/time" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingLeft="@dimen/settingsproextpaddleft"
+                android:paddingTop="@dimen/settingsprotextpaddtop"
+                android:text="@string/timeAndrDate"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/settingsprotextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/settingsprorpaddleft"
+                android:paddingTop="@dimen/settingsprorpaddtop"
+                android:src="@drawable/s_arror_r" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 设置时间和日期结束 -->
+
+
+    <!--
+    USB连接 开始
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="14dp"
+                android:src="@drawable/usb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/connectUsb"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:src="@drawable/s_arror_r" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    -->
+    <!-- USB连接结束 -->
+    <!-- 设置系统字体开始 -->
+    <!--
+    <LinearLayout
+        android:id="@+id/fontsSet"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="14dp"
+                android:src="@drawable/font" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/font"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:src="@drawable/s_arror_r" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    -->
+    <!-- 设置系统字体结束 -->
+    <!-- 恢复出厂设置开始 -->
+
+    <LinearLayout
+        android:id="@+id/recovery"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/settingsproinforheight" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/settingsproimagepaddleft"
+                android:paddingTop="@dimen/settingsproinforimagepaddtopv"
+                android:src="@drawable/recovery" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingLeft="@dimen/settingsproextpaddleft"
+                android:paddingTop="@dimen/settingsprotextpaddtop"
+                android:text="@string/recovery"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/settingsprotextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/settingsprorpaddleft"
+                android:paddingTop="@dimen/settingsprorpaddtop"
+                android:src="@drawable/s_arror_r" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 恢复出厂设置结束 -->
+
+</LinearLayout>

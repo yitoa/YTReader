@@ -1,0 +1,427 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <!-- 头部开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/proinfotopblank" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/proinfotopwidth"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/proinfosettingsimagepaddleft"
+                android:paddingTop="@dimen/proinfosettingsimagepaddtop"
+                android:src="@drawable/settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/proinfosettingstextpaddleft"
+                android:paddingTop="@dimen/proinfosettingstextpaddtop"
+                android:text="@string/settings"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/proinfosettingstextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="@dimen/proinfobackleftblank"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/proinfobackwidth"
+                android:layout_height="@dimen/proinfobackheight"
+                android:paddingTop="@dimen/proinfobackpaddtop"
+                android:src="@drawable/back1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="5dp" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/thick_line_h" >
+    </LinearLayout>
+    <!-- 头部结束 -->
+    <!-- 产品信息开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/proinfomessheight"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/proinfomesstextpaddtop"
+            android:text="@string/proinfor"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/proinfomesstextsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 产品信息结束 -->
+
+
+    <!-- 公司开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/proinfomessheight"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:paddingLeft="@dimen/proinfocomanypaddleft"
+            android:text="@string/company"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/proinfocomanytextsize" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/proinfocomanynamepaddleft"
+            android:text="@string/companyName"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/proinfocomanynametextsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 公司结束 -->
+
+
+    <!-- 型号开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/proinfomessheight"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:paddingLeft="@dimen/proinfomodelpaddleft"
+            android:text="@string/model"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/proinfomodeltextsize" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/proinfomodelnamepaddleft"
+            android:text="@string/modelName"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/proinfomodelmametextsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 型号结束 -->
+
+
+    <!-- CPU开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/proinfomessheight"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:paddingLeft="@dimen/proinfomodelpaddleft"
+            android:text="@string/cpu"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/proinfomodeltextsize" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/proinfomodelnamepaddleft"
+            android:text="@string/cpuName"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/proinfomodelmametextsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- CPU结束 -->
+
+
+    <!-- 软件版本开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/proinfomessheight"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:paddingLeft="@dimen/proinfomodelpaddleft"
+            android:text="@string/version"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/proinfomodelpaddleft" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/proinfomodelnamepaddleft"
+            android:text="@string/versionName"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/proinfomodelmametextsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 软件版本结束 -->
+
+
+    <!-- 电池电量开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/proinfomessheight" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:paddingLeft="@dimen/proinfomodelpaddleft"
+                android:text="@string/battery"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/proinfomodeltextsize" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="@dimen/proinfomodelnamepaddleft"
+                android:text="@string/batteryName"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/proinfomodelmametextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="8"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/batteryResult"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/batteryResulttextheight"
+                android:paddingLeft="@dimen/batteryResultpaddleft"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/batteryResulttextsize" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/progresswidth"
+                android:layout_height="@dimen/progressheight"
+                android:max="100"
+                android:paddingBottom="@dimen/progresspaddbottom"
+                android:progress="100"
+                android:progressDrawable="@drawable/bar" >
+            </ProgressBar>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 电池电量结束 -->
+
+
+    <!-- 可用存储开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/proinfomessheight" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:paddingLeft="@dimen/proinfomodelpaddleft"
+                android:text="@string/avaStore"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/proinfomodeltextsize" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="@dimen/proinfomodelnamepaddleft"
+                android:text="@string/batteryName"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/proinfomodelmametextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="8"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/avaStoreResult"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/batteryResulttextheight"
+                android:paddingLeft="@dimen/batteryResultpaddleft"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/batteryResulttextsize" />
+
+            <ProgressBar
+                android:id="@+id/avaStoreprogress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/progresswidth"
+                android:layout_height="@dimen/progressheight"
+                android:max="100"
+                android:paddingBottom="@dimen/progresspaddbottom"
+                android:progress="100"
+                android:progressDrawable="@drawable/bar" >
+            </ProgressBar>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 可用存储结束 -->
+
+
+    <!-- SD卡存储开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/proinfomessheight" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:paddingLeft="@dimen/proinfomodelpaddleft"
+                android:text="@string/sd"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/proinfomodeltextsize" />
+
+            <TextView
+                android:id="@+id/sdUse"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="@dimen/proinfomodelnamepaddleft"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/proinfomodelmametextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="8"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/sdStoreResult"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/batteryResulttextheight"
+                android:paddingLeft="@dimen/batteryResultpaddleft"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/batteryResulttextsize" />
+
+            <ProgressBar
+                android:id="@+id/sdStoreprogress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/progresswidth"
+                android:layout_height="@dimen/progressheight"
+                android:paddingBottom="@dimen/progresspaddbottom"
+                android:progressDrawable="@drawable/bar" >
+            </ProgressBar>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- SD卡存储结束 -->
+
+</LinearLayout>

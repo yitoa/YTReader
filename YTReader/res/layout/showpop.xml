@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="129dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/book_check_1"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/popbooks"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/books"
+        android:layout_marginBottom="2dp"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/popfiles"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/files"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+</LinearLayout>

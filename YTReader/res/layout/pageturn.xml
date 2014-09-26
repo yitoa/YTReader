@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <!-- 头部开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pageturntopblank" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pageturntop"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pageturnsettingspaddleft"
+                android:paddingTop="@dimen/pageturnsettingspaddtop"
+                android:src="@drawable/settings" />
+
+            <TextView
+                android:layout_width="@dimen/pageturnsettingstextwidth"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pageturnsettingstextpaddleft"
+                android:paddingTop="@dimen/pageturnsettingstextpaddtop"
+                android:text="@string/settings"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/pageturnsettingstextsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="@dimen/pageturnpagebackleftblank"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/pageback"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingTop="@dimen/pageturnpagebackpaddtop"
+                android:src="@drawable/back1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pageturntopbottom" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/thick_line_h" >
+    </LinearLayout>
+    <!-- 头部结束 -->
+    <!-- 语言设置开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pageturnheight"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/pageturnpaddtop"
+            android:text="@string/pageTurn"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/pageturntextsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dotted_line_h_0" >
+    </LinearLayout>
+    <!-- 语言设置结束 -->
+
+
+    <!-- 中文开始 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pageturnsheight"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/pageTurnCurl"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pageturncurlheight" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:paddingLeft="@dimen/pageturncurlpaddleft"
+                android:paddingTop="@dimen/pageturncurlpaddtop"
+                android:text="@string/pageTurnCurl"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/pageturncurltextsize" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="@dimen/pageturnCurlselectleftblank"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/pageTurnCurlSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pageturnCurlselectmartop"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line_h_0" />
+
+        <LinearLayout
+            android:id="@+id/pageTurnNo"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pageturncurlheight" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:paddingLeft="@dimen/pageturncurlpaddleft"
+                android:paddingTop="@dimen/pageturncurlpaddtop"
+                android:text="@string/pageTurnNo"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/pageturncurltextsize" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="@dimen/pageturnCurlselectleftblank"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/pageTurnNoSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pageturnCurlselectmartop"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_line_h_0" />
+    </LinearLayout>
+
+</LinearLayout>
