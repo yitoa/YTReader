@@ -508,18 +508,18 @@ public class TXTPageFactory extends BookPageFactory {
 	@Override
 	public void setTextStyle() {
 		style = context.getSharedPreferences(Constant.STYLE_REFERENCE, 0);
-		paint = FactoryUtils.getTextStyle(context);
+		paint = FactoryUtils.getTextStyle(context);//获取画笔
 		marginWidth = style.getInt(DBSchema.COLUMN_STYLE_MARGIN_WIDTH,
-				Constant.STYLE_DEFAULT_MARGIN_WIDTH);
+				Constant.STYLE_DEFAULT_MARGIN_WIDTH);//左右与边缘的距离
 		marginHeight = style.getInt(DBSchema.COLUMN_STYLE_MARGIN_HEIGHT,
-				Constant.STYLE_DEFAULT_MARGIN_HEIGHT);
-		vWidth = width - marginWidth * 2;
-		vHeight = height - marginHeight * 2;
+				Constant.STYLE_DEFAULT_MARGIN_HEIGHT);//上下与边缘的距离
+		vWidth = width - marginWidth * 2;//获取需要画的宽度
+		vHeight = height - marginHeight * 2;//获取需要画的高度
 		spacing = style.getInt(DBSchema.COLUMN_STYLE_LINE_SPACING,
-				Constant.STYLE_DEFAULT_LINE_SPACING);
+				Constant.STYLE_DEFAULT_LINE_SPACING);//行距
 		lineNum = (int) ((vHeight - spacing) / (paint.getTextSize() + spacing)) - 2; // 可显示的行数,-2为了页面美观
 		defaultTextColor = style.getInt(DBSchema.COLUMN_STYLE_TEXT_COLOR,
-				Constant.STYLE_DEFAULT_TEXT_COLOR);
+				Constant.STYLE_DEFAULT_TEXT_COLOR);//字体颜色
 	}
 
 	/**

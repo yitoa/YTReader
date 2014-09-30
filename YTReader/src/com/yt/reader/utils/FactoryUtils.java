@@ -42,13 +42,13 @@ public class FactoryUtils {
 
 	public static Paint getTextStyle(Context context) {
 		Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-		SharedPreferences style = context.getSharedPreferences(
+		SharedPreferences style = context.getSharedPreferences(//获取字体样式，存在数据库里面的
 				Constant.STYLE_REFERENCE, 0);
-		paint.setTextSize(style.getInt(DBSchema.COLUMN_STYLE_SIZE,
+		paint.setTextSize(style.getInt(DBSchema.COLUMN_STYLE_SIZE,//获取字体的大小
 				Constant.STYLE_DEFAULT_SIZE));
-		paint.setColor(style.getInt(DBSchema.COLUMN_STYLE_TEXT_COLOR,
+		paint.setColor(style.getInt(DBSchema.COLUMN_STYLE_TEXT_COLOR,//获取字体的颜色
 				Constant.STYLE_DEFAULT_TEXT_COLOR));
-		String font = style.getString(DBSchema.COLUMN_STYLE_TYPEFACE,
+		String font = style.getString(DBSchema.COLUMN_STYLE_TYPEFACE,//获取字体
 				Constant.STYLE_DEFAULT_TYPEFACE);
 		Typeface typeface = Typeface.createFromAsset(context.getAssets(),
 				"fonts/" + font);
